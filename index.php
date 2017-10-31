@@ -24,14 +24,20 @@ if (!empty($contents)) {
     $today = date("F j, Y, g:i a");
     $cityname = $clima->name;
 
-    echo $cityname . " - " . $today . "<br>";
-    echo "Temp Max: " . $temp_max . "&deg;C<br>";
-    echo "Temp Min: " . $temp_min . "&deg;C<br>";
-    echo "<img src='http://openweathermap.org/img/w/" . $icon . "'/ >";
+//    echo $cityname . " - " . $today . "<br>";
+//    echo "Temp Max: " . $temp_max . "&deg;C<br>";
+//    echo "Temp Min: " . $temp_min . "&deg;C<br>";
+//    echo "<img src='http://openweathermap.org/img/w/" . $icon . "'/ >";
 }
 ?>
 
 <div id="weather">
-    <div id="weather-icon"></div>
-    <div id="weather-captions"></div>    
+    <div id="weather-icon" style="float:left"><img src='http://openweathermap.org/img/w/<?php echo $icon; ?>'/ ></div>
+    <div id="weather-captions" style="float:left">
+        <?php
+        echo $cityname . " - " . $today . "<br>";
+        echo "Temp Max: " . $temp_max . "&deg;C<br>";
+        echo "Temp Min: " . $temp_min . "&deg;C<br>";
+        ?>
+    </div>    
 </div>
