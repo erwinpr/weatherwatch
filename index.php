@@ -2,6 +2,7 @@
 
 //units=For temperature in Celsius use units=metric
 //5128638 is new york ID
+//1642907 is Jakarta ID
 
 $url = "http://api.openweathermap.org/data/2.5/weather?id=1642907&lang=en&units=metric&APPID=3e7774a09299883c8419dd390034860e";
 //$url = "http://samples.openweathermap.org/data/2.5/weather?id=2172797&appid=b1b15e88fa797225412429c1c50c122a1";
